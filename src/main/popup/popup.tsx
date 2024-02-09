@@ -2,9 +2,9 @@ import { createRoot } from 'react-dom/client'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { updateBadge } from '../common/badge'
 import { trySendMessageToActiveTab } from '../browser/tabs'
-import { UserSyncStorageKeys } from '../shared/consts'
+import { UserSyncStorageKeys } from '../../lib/consts'
 import { LogoLoader } from '../common/LogoLoader'
-import { JobBoard } from '../shared/jobBoard'
+import { JobBoard } from '../../lib/jobBoard'
 import { LogoBar } from './LogoBar'
 import {
     isScrapeActive,

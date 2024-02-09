@@ -1,7 +1,7 @@
-import { JobBoard } from '../shared/jobBoard'
+import { JobBoard } from '../../lib/jobBoard'
 import { getLocalStorage } from '../browser/storage'
-import { JOB_DATA_IDENTIFIERS } from '../shared/job'
-import { DIVISION_DATA_IDENTIFIER } from '../shared/company'
+import { JOB_DATA_IDENTIFIERS } from '../../lib/job'
+import { DIVISION_DATA_IDENTIFIER } from '../../lib/company'
 import { getJobBoardSetting } from './userPrefs'
 
 export async function getJobCount(): Promise<number> {

@@ -1,5 +1,5 @@
 import { getLocalStorage, setSyncStorageByKey } from '../browser/storage'
-import { UserSyncStorageKeys } from '../shared/consts'
+import { UserSyncStorageKeys } from '../../lib/consts'
 
 let textFile: string | null = null
 

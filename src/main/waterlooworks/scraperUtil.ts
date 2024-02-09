@@ -4,8 +4,8 @@ import {
     PostingListDataFulltime,
     PostingListDataOther,
     PostingPageData,
-} from '../shared/job'
-import { HireGraph, CompanyDivisionWorkTermRating } from '../shared/company'
+} from '../../lib/job'
+import { HireGraph, CompanyDivisionWorkTermRating } from '../../lib/company'
 import JSON5 from 'json5'
 
 // Glossary of pages

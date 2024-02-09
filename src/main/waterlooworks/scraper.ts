@@ -20,10 +20,10 @@ import {
     updateLocalStorage,
 } from '../browser/storage'
 import asyncPool from 'tiny-async-pool'
-import { getJobDataKey, JobPosting } from '../shared/job'
-import { getCompanyDivisionDataKey } from '../shared/company'
-import { JOB_BOARD_SPEC, JobBoard } from '../shared/jobBoard'
-import { LocalStorageMetadataKeys, UserSyncStorageKeys } from '../shared/consts'
+import { getJobDataKey, JobPosting } from '../../lib/job'
+import { getCompanyDivisionDataKey } from '../../lib/company'
+import { JOB_BOARD_SPEC, JobBoard } from '../../lib/jobBoard'
+import { LocalStorageMetadataKeys, UserSyncStorageKeys } from '../../lib/consts'
 import moment from 'moment'
 import {
     ScrapeBadgeStatus,

@@ -12,7 +12,7 @@ import {
     RequestName,
     RequestPayload,
     ResultPayload,
-} from '../shared/dataBridge'
+} from '../../lib/dataBridge'
 
 const REQ_NAME_TO_RESPONSE_FUNC: {
     [req_id: string]: (request: RequestPayload) => void

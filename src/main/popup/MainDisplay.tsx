@@ -1,4 +1,4 @@
-import { JOB_BOARD_SPEC, JobBoard } from '../shared/jobBoard'
+import { JOB_BOARD_SPEC, JobBoard } from '../../lib/jobBoard'
 
 interface IMainDisplayProps {
     jobCount: number

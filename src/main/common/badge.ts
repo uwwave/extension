@@ -4,7 +4,7 @@ import {
     DAYS_TO_STALE_DATA,
     LocalStorageMetadataKeys,
     UserSyncStorageKeys,
-} from '../shared/consts'
+} from '../../lib/consts'
 import { getJobCount } from './dataCounts'
 import { getLocalStorage, getSyncStorage } from '../browser/storage'
 import moment from 'moment'
