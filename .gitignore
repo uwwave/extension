@@ -9,6 +9,7 @@
 # production
 /build
 /dist
+/dist_lib
 /dist_firefox
 
 # misc

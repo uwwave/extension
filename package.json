@@ -4,10 +4,11 @@
     "description": "browser extension for uwwave",
     "private": true,
     "scripts": {
-        "clean": "rm -rf dist/* dist_firefox/* .parcel-cache",
+        "clean": "rm -rf dist/* dist_firefox/* dist_lib/* .parcel-cache",
         "start": "yarn clean && parcel watch src/manifest.json --host localhost",
         "build": "yarn clean && parcel build src/manifest.json",
         "build:firefox": "yarn build && cp -r dist/* dist_firefox && node exportToFirefox.mjs",
+        "build:lib": "yarn clean && yarn tsc --build tsconfig.lib.json",
         "test": "jest --passWithNoTests",
         "test:coverage": "jest --coverage --watchAll=false --passWithNoTests",
         "test:watch": "jest --watch --passWithNoTests",
