@@ -1,8 +1,18 @@
 {
     "name": "uwwave_extension",
     "version": "1.2.0",
-    "description": "browser extension for uwwave",
-    "private": true,
+    "description": "Browser extension for UW Wave",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/uwwave/extension.git"
+    },
+    "author": "UW Wave",
+    "license": "GPL-3.0",
+    "files": [
+        "dist_lib/*",
+        "README.md",
+        "LICENSE.txt"
+    ],
     "scripts": {
         "clean": "rm -rf dist/* dist_firefox/* dist_lib/* .parcel-cache",
         "start": "yarn clean && parcel watch src/manifest.json --host localhost",
