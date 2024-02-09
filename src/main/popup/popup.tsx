@@ -8,7 +8,7 @@ import {
     UserSyncStorageKeys,
 } from '../shared/userProfile'
 import { getAppStatus } from '../common/appStatus'
-import { LogoLoader } from '../common/loader'
+import { LogoLoader } from '../common/LogoLoader'
 import { JobBoard } from '../shared/jobBoard'
 import { LogoBar } from './logoBar'
 import {

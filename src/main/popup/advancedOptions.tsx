@@ -6,7 +6,7 @@ import {
     clearLastScrapeStatus,
     exportJSON,
     openJsonFilePicker,
-} from '../common/util'
+} from './dataLoader'
 import InputLabel from '@mui/material/InputLabel'
 import MenuItem from '@mui/material/MenuItem'
 import FormHelperText from '@mui/material/FormHelperText'

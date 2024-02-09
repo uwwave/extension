@@ -2,7 +2,7 @@ import {
     CompleteAppState,
     CompleteAppStatus,
 } from '../common/completeAppStatus'
-import { LogoLoader } from '../common/loader'
+import { LogoLoader } from '../common/LogoLoader'
 import logo from '../../assets/waterlooworks/wave_logo_text.svg'
 
 interface IWaveInlineToolbarProps {
