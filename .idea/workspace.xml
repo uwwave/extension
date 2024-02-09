@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="dafdd3e6-0bb4-4186-a8d2-8ec7b333dd7b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/waterlooworks/bottomText.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/waterlooworks/bottomText.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +31,9 @@
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "/Users/williamqin/Projects/github.com/uwwave_extension",
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "yarn",
     "prettierjs.PrettierConfiguration.Package": "/Users/williamqin/Projects/github.com/uwwave_extension/node_modules/prettier",
     "settings.editor.selected.configurable": "vcs.Git",
@@ -46,7 +49,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1707443020156</updated>
-      <workItem from="1707443021250" duration="144000" />
+      <workItem from="1707443021250" duration="405000" />
     </task>
     <servers />
   </component>

@@ -1,19 +1,11 @@
 import $ from 'jquery'
 
 const QUERY_PARAM_JOB_ID = 'ck_jobid'
-const QUERY_PARAM_COMMAND = 'ck_cmd'
-const QUERY_PARAM_REDIRECT = 'ck_redirect'
 
 const urlSearchParams = new URLSearchParams(window.location.search)
 
 const jobId = urlSearchParams.get(QUERY_PARAM_JOB_ID)
 const urlWithoutQuery = window.location.href.split('?')[0]
-
-// if (jobId && urlSearchParams.get(QUERY_PARAM_REDIRECT) === "coop"
-//     && !JOB_BOARD_URLS.includes(urlWithoutQuery)) {
-//     // replace old url in history
-//     window.location.replace(urlWithoutQuery + "?" + urlSearchParams.toString());
-// }
 
 function getUpdatedUrl() {
     const searchParamsStr = urlSearchParams.toString()
