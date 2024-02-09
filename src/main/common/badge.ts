@@ -3,13 +3,14 @@ import { ExtensionResource, getResourceUrl } from '../browser/runtime'
 import {
     DAYS_TO_STALE_DATA,
     LocalStorageMetadataKeys,
-    MINUTES_TO_FAILED_SCRAPE,
     UserSyncStorageKeys,
 } from '../shared/userProfile'
 import { getJobCount } from './dataCounts'
 import { getLocalStorage, getSyncStorage } from '../browser/storage'
 import moment from 'moment'
 import { ScrapeBadgeStatus } from './scraperStatus'
+
+const MINUTES_TO_FAILED_SCRAPE = 1
 
 async function setBadgeText() {
     await action.setBadgeText({ text: 'x' })

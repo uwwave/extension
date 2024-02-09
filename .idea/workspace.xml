@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dafdd3e6-0bb4-4186-a8d2-8ec7b333dd7b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/common/badge.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/common/badge.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/common/completeAppStatus.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/common/completeAppStatus.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/common/scraperStatus.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/common/scraperStatus.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/popup/popup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/popup/popup.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/shared/jobBoard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/shared/jobBoard.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/shared/userProfile.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/shared/userProfile.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/waterlooworks/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/waterlooworks/main.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/waterlooworks/scraper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/waterlooworks/scraper.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,8 +55,8 @@
       <recent name="$PROJECT_DIR$/src/main/browser" />
     </key>
     <key name="es6.move.members.recent.items">
-      <recent name="$PROJECT_DIR$/src/main/common/badge.ts" />
       <recent name="$PROJECT_DIR$/src/main/common/scraperStatus.ts" />
+      <recent name="$PROJECT_DIR$/src/main/common/badge.ts" />
       <recent name="$PROJECT_DIR$/src/main/common/completeAppStatus.ts" />
       <recent name="$PROJECT_DIR$/src/main/common/targetSearchAction.ts" />
       <recent name="$PROJECT_DIR$/src/main/common/userPrefs.ts" />
@@ -65,7 +70,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1707443020156</updated>
-      <workItem from="1707443021250" duration="4935000" />
+      <workItem from="1707443021250" duration="5293000" />
     </task>
     <servers />
   </component>

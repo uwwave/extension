@@ -1,5 +1,4 @@
 export const DAYS_TO_STALE_DATA = 2
-export const MINUTES_TO_FAILED_SCRAPE = 1
 
 export enum UserSyncStorageKeys {
     LAST_SCRAPE_INITIATED_AT = 'LAST_SCRAPE_INITIATED_AT',

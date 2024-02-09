@@ -3,8 +3,7 @@ import {
     DAYS_TO_STALE_DATA,
     LocalStorageMetadataKeys,
 } from '../shared/userProfile'
-import { isScrapeActive, ScraperStatus } from './scraperStatus'
-import { ScrapeStage } from '../waterlooworks/scraper'
+import { isScrapeActive, ScraperStatus, ScrapeStage } from './scraperStatus'
 import moment from 'moment'
 import { getLocalStorage } from '../browser/storage'
 

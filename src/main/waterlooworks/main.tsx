@@ -1,8 +1,8 @@
 import $ from 'jquery'
 import { ExtensionResource, getResourceUrl } from '../browser/runtime'
-import { ScraperStatus } from '../common/scraperStatus'
+import { ScraperStatus, ScrapeStage } from '../common/scraperStatus'
 import { createRoot } from 'react-dom/client'
-import { scraper, ScrapeStage } from './scraper'
+import { scraper } from './scraper'
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import {
     CompleteAppState,

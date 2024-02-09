@@ -23,7 +23,3 @@ export const JOB_BOARD_SPEC: { [jobBoard in JobBoard]: JobBoardSpec } = {
         url: 'https://waterlooworks.uwaterloo.ca/myAccount/hire-waterloo/other-jobs/jobs-postings.htm',
     },
 }
-
-export const JOB_BOARD_URLS = Object.values(JOB_BOARD_SPEC).map(
-    spec => spec.url,
-)

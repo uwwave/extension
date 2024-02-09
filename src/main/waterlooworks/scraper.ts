@@ -28,7 +28,11 @@ import {
     UserSyncStorageKeys,
 } from '../shared/userProfile'
 import moment from 'moment'
-import { ScrapeBadgeStatus, waitingScrapeStages } from '../common/scraperStatus'
+import {
+    ScrapeBadgeStatus,
+    ScrapeStage,
+    waitingScrapeStages,
+} from '../common/scraperStatus'
 import {
     getJobBoardSetting,
     getTargetSearchActionSetting,
@@ -37,14 +41,6 @@ import { TargetSearchAction } from '../common/targetSearchAction'
 
 const DASHBOARD_URL =
     'https://waterlooworks.uwaterloo.ca/myAccount/dashboard.htm'
-
-export enum ScrapeStage {
-    standby,
-    jobPostings,
-    workTermRatings,
-    finished,
-    failed,
-}
 
 interface PostingsTableRequestData {
     action: string

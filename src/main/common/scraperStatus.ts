@@ -1,4 +1,10 @@
-import { ScrapeStage } from '../waterlooworks/scraper'
+export enum ScrapeStage {
+    standby,
+    jobPostings,
+    workTermRatings,
+    finished,
+    failed,
+}
 
 export type ScraperStatus = null | {
     stage: ScrapeStage

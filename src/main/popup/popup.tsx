@@ -10,6 +10,7 @@ import {
     isScrapeActive,
     isScrapeFinished,
     ScraperStatus,
+    ScrapeStage,
 } from '../common/scraperStatus'
 import { StatusHeader } from './statusHeader'
 import { MainDisplay } from './mainDisplay'
@@ -17,7 +18,6 @@ import { AdvancedOptions } from './advancedOptions'
 import { getBrowserInfo } from '../browser/runtime'
 import { setSyncStorageByKey } from '../browser/storage'
 import { ThemeProvider, createTheme } from '@mui/material/styles'
-import { ScrapeStage } from '../waterlooworks/scraper'
 import { getCompanyCount, getJobCount } from '../common/dataCounts'
 import {
     computeCompleteAppStatus,
