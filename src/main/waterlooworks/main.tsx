@@ -4,14 +4,13 @@ import { ScraperStatus } from '../common/scraperStatus'
 import { createRoot } from 'react-dom/client'
 import { scraper, ScrapeStage } from './scraper'
 import { useCallback, useEffect, useMemo, useState } from 'react'
-import { AppStatusOverview } from '../shared/userProfile'
 import {
     CompleteAppState,
     CompleteAppStatus,
     computeCompleteAppStatus,
+    getLastSuccessfulScrapeAt,
 } from '../common/completeAppStatus'
 import { getJobCount } from '../common/dataCounts'
-import { getAppStatus } from '../common/appStatus'
 import { createTheme, ThemeProvider } from '@mui/material/styles'
 import { WaveInlineToolbar } from './toolbar'
 import { WaveBottomText } from './bottomText'
@@ -41,9 +40,9 @@ const MainContainer = () => {
 
     const [loading, setLoading] = useState(true)
 
-    const [appStatus, setAppStatus] = useState<AppStatusOverview>(
-        {} as AppStatusOverview,
-    )
+    const [lastSuccessfulScrapeAt, setLastSuccessfulScrapeAt] = useState<
+        string | null
+    >('')
 
     const [initiatedScrape, setInitiatedScrape] = useState(false)
 
@@ -57,12 +56,13 @@ const MainContainer = () => {
     const completeAppStatus = useMemo<CompleteAppStatus>(
         () =>
             computeCompleteAppStatus(
-                appStatus,
+                lastSuccessfulScrapeAt,
+                jobCount,
                 scraperStatus,
                 initiatedScrape,
                 false,
             ),
-        [appStatus, scraperStatus, initiatedScrape],
+        [lastSuccessfulScrapeAt, jobCount, scraperStatus, initiatedScrape],
     )
 
     const onPrimaryButtonClicked = useCallback(() => {
@@ -93,9 +93,8 @@ const MainContainer = () => {
         setInitiatedScrape(true)
     }
     const refreshData = async () => {
-        const nextJobCount = await getJobCount()
-        setJobCount(nextJobCount)
-        setAppStatus(await getAppStatus(nextJobCount))
+        setJobCount(await getJobCount())
+        setLastSuccessfulScrapeAt(await getLastSuccessfulScrapeAt())
     }
 
     useEffect(() => {

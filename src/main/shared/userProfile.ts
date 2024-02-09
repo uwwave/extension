@@ -41,7 +41,4 @@ export enum DataStatus {
 export interface AppStatusOverview {
     dataStatus: DataStatus
     dataAgeMessage: string
-    badgeIcon: BadgeIconName
-    scrapeStatus: ScrapeStatus
-    scrapeError: string
 }

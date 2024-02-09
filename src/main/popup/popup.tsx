@@ -1,9 +1,8 @@
 import { createRoot } from 'react-dom/client'
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { updateBadge } from '../common/icon'
+import { updateBadge } from '../common/badge'
 import { trySendMessageToActiveTab } from '../browser/tabs'
-import { AppStatusOverview, UserSyncStorageKeys } from '../shared/userProfile'
-import { getAppStatus } from '../common/appStatus'
+import { UserSyncStorageKeys } from '../shared/userProfile'
 import { LogoLoader } from '../common/LogoLoader'
 import { JobBoard } from '../shared/jobBoard'
 import { LogoBar } from './logoBar'
@@ -20,7 +19,10 @@ import { setSyncStorageByKey } from '../browser/storage'
 import { ThemeProvider, createTheme } from '@mui/material/styles'
 import { ScrapeStage } from '../waterlooworks/scraper'
 import { getCompanyCount, getJobCount } from '../common/dataCounts'
-import { computeCompleteAppStatus } from '../common/completeAppStatus'
+import {
+    computeCompleteAppStatus,
+    getLastSuccessfulScrapeAt,
+} from '../common/completeAppStatus'
 import {
     getJobBoardSetting,
     getTargetSearchActionSetting,
@@ -38,9 +40,9 @@ const MainContainer = () => {
 
     const [isFirefox, setIsFirefox] = useState(false)
 
-    const [appStatus, setAppStatus] = useState<AppStatusOverview>(
-        {} as AppStatusOverview,
-    )
+    const [lastSuccessfulScrapeAt, setLastSuccessfulScrapeAt] = useState<
+        string | null
+    >(null)
     const [scraperStatus, setScraperStatus] = useState<ScraperStatus>(null)
     const [jobCount, setJobCount] = useState(0)
     const [companyCount, setCompanyCount] = useState(0)
@@ -49,8 +51,13 @@ const MainContainer = () => {
 
     const completeAppStatus = useMemo(
         () =>
-            computeCompleteAppStatus(appStatus, scraperStatus, initiatedScrape),
-        [appStatus, scraperStatus, initiatedScrape],
+            computeCompleteAppStatus(
+                lastSuccessfulScrapeAt,
+                jobCount,
+                scraperStatus,
+                initiatedScrape,
+            ),
+        [lastSuccessfulScrapeAt, jobCount, scraperStatus, initiatedScrape],
     )
 
     const [jobBoard, setJobBoard] = useState(JobBoard.coop)
@@ -96,11 +103,10 @@ const MainContainer = () => {
         setJobBoard(await getJobBoardSetting())
     }
 
-    const updateCountsAndAppStatus = async () => {
-        const nextJobCount = await getJobCount()
-        setJobCount(nextJobCount)
+    const refreshData = async () => {
+        setJobCount(await getJobCount())
         setCompanyCount(await getCompanyCount())
-        setAppStatus(await getAppStatus(nextJobCount))
+        setLastSuccessfulScrapeAt(await getLastSuccessfulScrapeAt())
     }
 
     const updateScraperStatus = async () => {
@@ -120,7 +126,7 @@ const MainContainer = () => {
             }
 
             await updateUserPreferences()
-            await updateCountsAndAppStatus()
+            await refreshData()
             await updateScraperStatus()
 
             setLoading(false)
@@ -167,7 +173,7 @@ const MainContainer = () => {
                         <AdvancedOptions
                             isFirefox={isFirefox}
                             onDataChanged={async () => {
-                                await updateCountsAndAppStatus()
+                                await refreshData()
                                 await trySendMessageToActiveTab('dataUpdated')
                             }}
                             targetSearchAction={targetSearchAction}
@@ -185,7 +191,7 @@ const MainContainer = () => {
                                     UserSyncStorageKeys.SETTING_TARGET_JOB_BOARD,
                                     newValue,
                                 )
-                                await updateCountsAndAppStatus()
+                                await refreshData()
                             }}
                         />
                     </>

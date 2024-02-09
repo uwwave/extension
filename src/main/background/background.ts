@@ -1,5 +1,5 @@
 import { addSyncStorageListener } from '../browser/storage'
-import { updateBadge } from '../common/icon'
+import { updateBadge } from '../common/badge'
 import { addRuntimeOnInstalledListener } from '../browser/runtime'
 import { createTabWithUrl } from '../browser/tabs'
 
