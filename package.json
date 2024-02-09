@@ -1,7 +1,7 @@
 {
-    "name": "uwwave_extension",
+    "name": "uwwave_extension_lib",
     "version": "1.2.0",
-    "description": "Browser extension for UW Wave",
+    "description": "API for reading and writing from the UW Wave browser extension",
     "repository": {
         "type": "git",
         "url": "https://github.com/uwwave/extension.git"
@@ -13,12 +13,14 @@
         "README.md",
         "LICENSE.txt"
     ],
+    "homepage": "https://uwwave.ca",
     "scripts": {
         "clean": "rm -rf dist/* dist_firefox/* dist_lib/* .parcel-cache",
         "start": "yarn clean && parcel watch src/manifest.json --host localhost",
-        "build": "yarn clean && parcel build src/manifest.json",
-        "build:firefox": "yarn build && cp -r dist/* dist_firefox && node exportToFirefox.mjs",
-        "build:lib": "yarn clean && yarn tsc --build tsconfig.lib.json",
+        "build": "yarn clean && yarn build:chrome && yarn build:firefox && yarn build:lib",
+        "build:chrome": "parcel build src/manifest.json",
+        "build:firefox": "mkdir dist_firefox && cp -r dist/* dist_firefox && node exportToFirefox.mjs",
+        "build:lib": "yarn tsc --build tsconfig.lib.json",
         "test": "jest --passWithNoTests",
         "test:coverage": "jest --coverage --watchAll=false --passWithNoTests",
         "test:watch": "jest --watch --passWithNoTests",
