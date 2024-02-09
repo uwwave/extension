@@ -25,11 +25,10 @@ import { getCompanyDivisionDataKey } from '../shared/company'
 import { JOB_BOARD_SPEC, JobBoard } from '../shared/jobBoard'
 import {
     LocalStorageMetadataKeys,
-    ScrapeStatus,
     UserSyncStorageKeys,
 } from '../shared/userProfile'
 import moment from 'moment'
-import { waitingScrapeStages } from '../common/scraperStatus'
+import { ScrapeBadgeStatus, waitingScrapeStages } from '../common/scraperStatus'
 import {
     getJobBoardSetting,
     getTargetSearchActionSetting,
@@ -271,7 +270,7 @@ class Scraper {
                 this.getUtcNowIsoString(),
             [UserSyncStorageKeys.LAST_SCRAPE_HEARTBEAT_AT]:
                 this.getUtcNowIsoString(),
-            [UserSyncStorageKeys.LAST_SCRAPE_STATUS]: ScrapeStatus.PENDING,
+            [UserSyncStorageKeys.LAST_SCRAPE_STATUS]: ScrapeBadgeStatus.PENDING,
         })
         // @ts-expect-error NodeJS.Timer doesn't exist
         this.heartbeatInterval = setInterval(() => {
@@ -359,7 +358,7 @@ class Scraper {
         )
         await setSyncStorageByKey(
             UserSyncStorageKeys.LAST_SCRAPE_STATUS,
-            ScrapeStatus.COMPLETED,
+            ScrapeBadgeStatus.COMPLETED,
         )
 
         window.open('https://uwwave.ca/setup', '_blank')
@@ -386,7 +385,7 @@ const scrapeMain = () => {
                 // set after clearing interval to avoid race condition
                 setSyncStorageByKey(
                     UserSyncStorageKeys.LAST_SCRAPE_STATUS,
-                    ScrapeStatus.FAILED,
+                    ScrapeBadgeStatus.FAILED,
                 ).then()
             })
     } else {

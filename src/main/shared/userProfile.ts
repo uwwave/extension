@@ -15,30 +15,3 @@ export enum LocalStorageMetadataKeys {
 
     VIEWED_JOBS = 'VIEWED_JOBS',
 }
-
-export enum BadgeIconName {
-    error = 'error',
-    warning = 'warning',
-    ok = 'good-2-go',
-    loading = 'loading',
-    greyIcon = 'non-scrape',
-    blueIcon = 'wave-icon',
-}
-
-export enum ScrapeStatus {
-    PENDING = 'pending',
-    COMPLETED = 'completed',
-    FAILED = 'failed',
-}
-
-export enum DataStatus {
-    NO_DATA = 'NO_DATA', // no data, no scrape date
-    INCOMPLETE_DATA = 'INCOMPLETE_DATA', // data, no scrape date
-    STALE_DATA = 'STALE_DATA', // scrape date is old
-    GOOD_DATA = 'GOOD_DATA', // scrape date is recent
-}
-
-export interface AppStatusOverview {
-    dataStatus: DataStatus
-    dataAgeMessage: string
-}

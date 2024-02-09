@@ -26,3 +26,9 @@ export function isScrapeFinished(scraperStatus: ScraperStatus) {
         terminalScrapeStages.includes(scraperStatus.stage)
     )
 }
+
+export enum ScrapeBadgeStatus {
+    PENDING = 'pending',
+    COMPLETED = 'completed',
+    FAILED = 'failed',
+}

@@ -1,19 +1,27 @@
 import { action } from 'webextension-polyfill'
 import { ExtensionResource, getResourceUrl } from '../browser/runtime'
 import {
-    BadgeIconName,
     DAYS_TO_STALE_DATA,
     LocalStorageMetadataKeys,
     MINUTES_TO_FAILED_SCRAPE,
-    ScrapeStatus,
     UserSyncStorageKeys,
 } from '../shared/userProfile'
 import { getJobCount } from './dataCounts'
 import { getLocalStorage, getSyncStorage } from '../browser/storage'
 import moment from 'moment'
+import { ScrapeBadgeStatus } from './scraperStatus'
 
 async function setBadgeText() {
     await action.setBadgeText({ text: 'x' })
+}
+
+enum BadgeIconName {
+    error = 'error',
+    warning = 'warning',
+    ok = 'good-2-go',
+    loading = 'loading',
+    greyIcon = 'non-scrape',
+    blueIcon = 'wave-icon',
 }
 
 async function setBadgeIcon(iconName: BadgeIconName) {
@@ -63,13 +71,13 @@ async function getBadgeIconName(): Promise<BadgeIconName> {
             .subtract(MINUTES_TO_FAILED_SCRAPE, 'minute')
             .isAfter(lastHeartbeatAt)
     const showError =
-        (isHeartbeatDead && scrapeStatus === ScrapeStatus.PENDING) ||
-        scrapeStatus === ScrapeStatus.FAILED
+        (isHeartbeatDead && scrapeStatus === ScrapeBadgeStatus.PENDING) ||
+        scrapeStatus === ScrapeBadgeStatus.FAILED
 
     // -- badge icon --
     if (showError) {
         return BadgeIconName.error
-    } else if (scrapeStatus === ScrapeStatus.PENDING) {
+    } else if (scrapeStatus === ScrapeBadgeStatus.PENDING) {
         return BadgeIconName.loading
     } else if (isDataGood) {
         return BadgeIconName.ok
