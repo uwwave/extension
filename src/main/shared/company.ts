@@ -1,5 +1,9 @@
 export const DIVISION_DATA_IDENTIFIER = 'division_'
 
+export function getCompanyDivisionDataKey(divisionId: number) {
+    return `${DIVISION_DATA_IDENTIFIER}${divisionId.toString()}`
+}
+
 export interface HireHistory {
     term: string
     organizationHired: string
@@ -18,8 +22,4 @@ export interface CompanyDivisionWorkTermRating {
     division: string
     hireHistory: HireHistory[]
     graphs: HireGraph[]
-}
-
-export function getCompanyDivisionDataKey(divisionId: number) {
-    return `${DIVISION_DATA_IDENTIFIER}${divisionId.toString()}`
 }

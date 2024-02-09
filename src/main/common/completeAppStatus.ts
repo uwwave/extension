@@ -1,8 +1,5 @@
 import { WaveColors } from './waveColors'
-import {
-    DAYS_TO_STALE_DATA,
-    LocalStorageMetadataKeys,
-} from '../shared/userProfile'
+import { DAYS_TO_STALE_DATA, LocalStorageMetadataKeys } from '../shared/consts'
 import { isScrapeActive, ScraperStatus, ScrapeStage } from './scraperStatus'
 import moment from 'moment'
 import { getLocalStorage } from '../browser/storage'

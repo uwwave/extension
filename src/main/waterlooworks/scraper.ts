@@ -23,10 +23,7 @@ import asyncPool from 'tiny-async-pool'
 import { getJobDataKey, JobPosting } from '../shared/job'
 import { getCompanyDivisionDataKey } from '../shared/company'
 import { JOB_BOARD_SPEC, JobBoard } from '../shared/jobBoard'
-import {
-    LocalStorageMetadataKeys,
-    UserSyncStorageKeys,
-} from '../shared/userProfile'
+import { LocalStorageMetadataKeys, UserSyncStorageKeys } from '../shared/consts'
 import moment from 'moment'
 import {
     ScrapeBadgeStatus,

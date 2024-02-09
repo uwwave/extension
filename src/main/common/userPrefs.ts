@@ -1,5 +1,5 @@
 import { getSyncStorage } from '../browser/storage'
-import { UserSyncStorageKeys } from '../shared/userProfile'
+import { UserSyncStorageKeys } from '../shared/consts'
 import { JobBoard } from '../shared/jobBoard'
 import { TargetSearchAction } from './targetSearchAction'
 

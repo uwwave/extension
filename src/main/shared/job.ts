@@ -1,16 +1,13 @@
 import { JobBoard } from './jobBoard'
 
-export const JOB_PROCESSING_RESULTS_DATA_KEY = 'jobs_to_processing_results'
-
-export interface JobProcessingResults {
-    keywords: string[]
-    processedAt: Date
-}
-
 export const JOB_DATA_IDENTIFIERS = {
     [JobBoard.coop]: 'coopJob_',
     [JobBoard.fulltime]: 'fulltimeJob_',
     [JobBoard.other]: 'otherJob_',
+}
+
+export function getJobDataKey(jobId: number, jobBoard: JobBoard) {
+    return `${JOB_DATA_IDENTIFIERS[jobBoard]}${jobId.toString()}`
 }
 
 export interface PostingListDataCoop {
@@ -62,8 +59,4 @@ export interface JobPosting {
     pageData: any // PostingPageData
     divisionId?: number
     isForMyProgram?: boolean
-}
-
-export function getJobDataKey(jobId: number, jobBoard: JobBoard) {
-    return `${JOB_DATA_IDENTIFIERS[jobBoard]}${jobId.toString()}`
 }
