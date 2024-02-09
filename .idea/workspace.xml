@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dafdd3e6-0bb4-4186-a8d2-8ec7b333dd7b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/common/appStatus.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/common/appStatus.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/common/completeAppStatus.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/common/completeAppStatus.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/common/dataCounts.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/common/dataCounts.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/common/scraperStatus.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/common/scraperStatus.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/common/util.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/common/util.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/popup/popup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/popup/popup.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/waterlooworks/scraper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/waterlooworks/scraper.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +61,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1707443020156</updated>
-      <workItem from="1707443021250" duration="2143000" />
+      <workItem from="1707443021250" duration="2412000" />
     </task>
     <servers />
   </component>

@@ -1,9 +1,5 @@
 import { WaveColors } from './waveColors'
-import {
-    AppStatusOverview,
-    DataStatus,
-    ScrapeStatus,
-} from '../shared/userProfile'
+import { AppStatusOverview, DataStatus } from '../shared/userProfile'
 import { isScrapeActive, ScraperStatus } from './scraperStatus'
 import { warningDataStatuses } from './appStatus'
 import { ScrapeStage } from '../waterlooworks/scraper'
