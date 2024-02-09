@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 import ExpandLessIcon from '@mui/icons-material/ExpandLess'
-import { clearLocalStorage, setLocalStorage } from '../common/storage'
+import { clearLocalStorage, setLocalStorage } from '../browser/storage'
 import {
     clearLastScrapeStatus,
     exportJSON,

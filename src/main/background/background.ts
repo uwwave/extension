@@ -1,7 +1,7 @@
-import { addSyncStorageListener } from '../common/storage'
+import { addSyncStorageListener } from '../browser/storage'
 import { updateBadge } from '../common/icon'
-import { addRuntimeOnInstalledListener } from '../common/runtime'
-import { createTabWithUrl } from '../common/tabs'
+import { addRuntimeOnInstalledListener } from '../browser/runtime'
+import { createTabWithUrl } from '../browser/tabs'
 
 let heartbeatTimeout = setTimeout(updateBadge, 65000)
 

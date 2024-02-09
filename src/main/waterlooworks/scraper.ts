@@ -1,5 +1,5 @@
 import $ from 'jquery'
-import { getHttp, RequestMethod, sendForm } from '../common/api'
+import { getHttp, RequestMethod, sendForm } from '../browser/requests'
 import { AxiosResponse } from 'axios'
 import {
     scrapeJobBoardHome,
@@ -19,7 +19,7 @@ import {
     setSyncStorage,
     setSyncStorageByKey,
     updateLocalStorage,
-} from '../common/storage'
+} from '../browser/storage'
 import asyncPool from 'tiny-async-pool'
 import { getJobDataKey, JobPosting } from '../shared/job'
 import { getCompanyDivisionDataKey } from '../shared/company'

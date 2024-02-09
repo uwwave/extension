@@ -1,5 +1,5 @@
 import $ from 'jquery'
-import { ExtensionResource, getResourceUrl } from '../common/runtime'
+import { ExtensionResource, getResourceUrl } from '../browser/runtime'
 import { ScraperStatus } from '../common/scraperStatus'
 import { createRoot } from 'react-dom/client'
 import { scraper, ScrapeStage } from './scraper'

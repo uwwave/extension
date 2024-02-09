@@ -3,9 +3,9 @@ import {
     getLocalStorage,
     setLocalStorage,
     setSyncStorageByKey,
-} from './storage'
+} from '../browser/storage'
 import { UserSyncStorageKeys } from '../shared/userProfile'
-import { getBackgroundPage } from './runtime'
+import { getBackgroundPage } from '../browser/runtime'
 import {
     terminalScrapeStages,
     waitingScrapeStages,

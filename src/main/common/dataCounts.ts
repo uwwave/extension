@@ -1,6 +1,6 @@
 import { JobBoard } from '../shared/jobBoard'
 import { getJobBoardSetting } from './appStatus'
-import { getLocalStorage } from './storage'
+import { getLocalStorage } from '../browser/storage'
 import { JOB_DATA_IDENTIFIERS } from '../shared/job'
 import { DIVISION_DATA_IDENTIFIER } from '../shared/company'
 

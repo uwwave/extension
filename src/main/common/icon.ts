@@ -1,5 +1,5 @@
 import { action } from 'webextension-polyfill'
-import { ExtensionResource, getResourceUrl } from './runtime'
+import { ExtensionResource, getResourceUrl } from '../browser/runtime'
 import { getAppStatus } from './appStatus'
 import { BadgeIconName } from '../shared/userProfile'
 import { getJobCount } from './dataCounts'

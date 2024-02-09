@@ -1,4 +1,4 @@
-import { addRuntimeListener, getExtensionId } from '../common/runtime'
+import { addRuntimeListener, getExtensionId } from '../browser/runtime'
 import { Runtime } from 'webextension-polyfill'
 import MessageSender = Runtime.MessageSender
 import { scraper } from './scraper'

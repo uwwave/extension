@@ -10,7 +10,7 @@ import {
     TargetSearchAction,
     UserSyncStorageKeys,
 } from '../shared/userProfile'
-import { getLocalStorage, getSyncStorage } from './storage'
+import { getLocalStorage, getSyncStorage } from '../browser/storage'
 import { JobBoard } from '../shared/jobBoard'
 
 export const getJobBoardSetting = async () => {

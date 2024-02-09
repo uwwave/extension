@@ -5,7 +5,7 @@ import {
     removeSyncStorage,
     setLocalStorage,
     setSyncStorage,
-} from '../common/storage'
+} from '../browser/storage'
 import {
     MessagePayload,
     MessageType,
