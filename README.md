@@ -1,1 +1,3 @@
-# extension
+# UW Wave Browser Extension
+
+

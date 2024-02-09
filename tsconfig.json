@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "target": "es2021",
+        "lib": ["dom", "es2021"],
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "module": "esnext",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "isolatedModules": false,
+        "noEmit": true,
+        "outDir": "./dist/",
+        "noImplicitAny": true,
+        "types": ["chrome"],
+        "jsx": "preserve",
+    },
+    "include": ["./src/**/*"]
+}

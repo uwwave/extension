@@ -1,0 +1,64 @@
+{
+    "manifest_version": 3,
+    "name": "UW Wave",
+    "description": "Cruise through recruiting season with this powerful WaterlooWorks companion app",
+    "version": "1.2.0",
+    "icons": {
+        "16": "assets/icons/wave-icon16.png",
+        "32": "assets/icons/wave-icon32.png",
+        "48": "assets/icons/wave-icon48.png",
+        "128": "assets/icons/wave-icon128.png"
+    },
+    "action": {
+        "default_icon": {
+            "16": "assets/icons/wave-icon16.png",
+            "32": "assets/icons/wave-icon32.png",
+            "48": "assets/icons/wave-icon48.png",
+            "128": "assets/icons/wave-icon128.png"
+        },
+        "default_popup": "resources/html/popup.html"
+    },
+    "background": {
+        "service_worker": "main/background/background.ts",
+        "type": "module"
+    },
+    "host_permissions": [
+        "*://waterlooworks.uwaterloo.ca/*"
+    ],
+    "permissions": [
+        "storage",
+        "unlimitedStorage"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["*://waterlooworks.uwaterloo.ca/*"],
+            "js": [
+                "main/waterlooworks/jobNav.ts",
+                "main/waterlooworks/scraper.ts",
+                "main/waterlooworks/main.tsx",
+                "main/waterlooworks/popupService.ts"
+            ],
+            "css": [
+                "resources/css/ww_styles.css"
+            ]
+        },
+        {
+            "matches": [
+                "*://uwwave.ca/*",
+                "*://*.vercel.app/*",
+                "*://127.0.0.1/*",
+                "*://localhost/*"
+            ],
+            "js": [
+                "main/website/service.ts"
+            ],
+            "css": []
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [ "resources/html/*.html", "assets/waterlooworks/*", "assets/icons/*" ],
+            "matches": [ "*://waterlooworks.uwaterloo.ca/*" ]
+        }
+    ]
+}
