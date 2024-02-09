@@ -1,8 +1,8 @@
 import { JobBoard } from '../shared/jobBoard'
-import { getJobBoardSetting } from './appStatus'
 import { getLocalStorage } from '../browser/storage'
 import { JOB_DATA_IDENTIFIERS } from '../shared/job'
 import { DIVISION_DATA_IDENTIFIER } from '../shared/company'
+import { getJobBoardSetting } from './userPrefs'
 
 export async function getJobCount(): Promise<number> {
     const jobBoard: JobBoard = await getJobBoardSetting()

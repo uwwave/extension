@@ -1,22 +1,21 @@
 import { createRoot } from 'react-dom/client'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { updateBadge } from '../common/icon'
-import { isScrapeActive, isScrapeFinished } from '../common/util'
 import { trySendMessageToActiveTab } from '../browser/tabs'
 import {
     AppStatusOverview,
     TargetSearchAction,
     UserSyncStorageKeys,
 } from '../shared/userProfile'
-import {
-    getAppStatus,
-    getJobBoardSetting,
-    getTargetSearchActionSetting,
-} from '../common/appStatus'
+import { getAppStatus } from '../common/appStatus'
 import { LogoLoader } from '../common/loader'
 import { JobBoard } from '../shared/jobBoard'
 import { LogoBar } from './logoBar'
-import { ScraperStatus } from '../common/scraperStatus'
+import {
+    isScrapeActive,
+    isScrapeFinished,
+    ScraperStatus,
+} from '../common/scraperStatus'
 import { StatusHeader } from './statusHeader'
 import { MainDisplay } from './mainDisplay'
 import { AdvancedOptions } from './advancedOptions'
@@ -26,6 +25,10 @@ import { ThemeProvider, createTheme } from '@mui/material/styles'
 import { ScrapeStage } from '../waterlooworks/scraper'
 import { getCompanyCount, getJobCount } from '../common/dataCounts'
 import { computeCompleteAppStatus } from '../common/completeAppStatus'
+import {
+    getJobBoardSetting,
+    getTargetSearchActionSetting,
+} from '../common/userPrefs'
 
 const darkTheme = createTheme({
     palette: {

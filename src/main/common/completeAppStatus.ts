@@ -4,8 +4,7 @@ import {
     DataStatus,
     ScrapeStatus,
 } from '../shared/userProfile'
-import { ScraperStatus } from './scraperStatus'
-import { isScrapeActive } from './util'
+import { isScrapeActive, ScraperStatus } from './scraperStatus'
 import { warningDataStatuses } from './appStatus'
 import { ScrapeStage } from '../waterlooworks/scraper'
 

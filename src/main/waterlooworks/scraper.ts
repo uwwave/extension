@@ -14,7 +14,6 @@ import {
     scrapeWorkTermRatingButton,
 } from './scraperUtil'
 import {
-    getSyncStorage,
     setLocalStorageByKey,
     setSyncStorage,
     setSyncStorageByKey,
@@ -31,10 +30,11 @@ import {
     UserSyncStorageKeys,
 } from '../shared/userProfile'
 import moment from 'moment'
+import { waitingScrapeStages } from '../common/scraperStatus'
 import {
     getJobBoardSetting,
     getTargetSearchActionSetting,
-} from '../common/appStatus'
+} from '../common/userPrefs'
 
 const DASHBOARD_URL =
     'https://waterlooworks.uwaterloo.ca/myAccount/dashboard.htm'
@@ -46,13 +46,6 @@ export enum ScrapeStage {
     finished,
     failed,
 }
-
-export const waitingScrapeStages = [
-    ScrapeStage.standby,
-    ScrapeStage.finished,
-    ScrapeStage.failed,
-]
-export const terminalScrapeStages = [ScrapeStage.finished, ScrapeStage.failed]
 
 interface PostingsTableRequestData {
     action: string

@@ -1,16 +1,5 @@
-import {
-    clearLocalStorage,
-    getLocalStorage,
-    setLocalStorage,
-    setSyncStorageByKey,
-} from '../browser/storage'
+import { getLocalStorage, setSyncStorageByKey } from '../browser/storage'
 import { UserSyncStorageKeys } from '../shared/userProfile'
-import { getBackgroundPage } from '../browser/runtime'
-import {
-    terminalScrapeStages,
-    waitingScrapeStages,
-} from '../waterlooworks/scraper'
-import { ScraperStatus } from './scraperStatus'
 
 let textFile: string | null = null
 
@@ -84,18 +73,4 @@ export async function openJsonFilePicker(onLoad: (content: any) => void) {
     })
 
     picker.click()
-}
-
-export function isScrapeActive(scraperStatus: ScraperStatus) {
-    return (
-        scraperStatus?.stage !== undefined &&
-        !waitingScrapeStages.includes(scraperStatus.stage)
-    )
-}
-
-export function isScrapeFinished(scraperStatus: ScraperStatus) {
-    return (
-        scraperStatus?.stage !== undefined &&
-        terminalScrapeStages.includes(scraperStatus.stage)
-    )
 }
