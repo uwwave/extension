@@ -2,7 +2,7 @@ import $ from 'jquery'
 import { ExtensionResource, getResourceUrl } from '../browser/runtime'
 import { ScraperStatus, ScrapeStage } from '../common/scraperStatus'
 import { createRoot } from 'react-dom/client'
-import { scraper } from './scraper'
+import { scraper } from '../waterlooworks/scraper'
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import {
     CompleteAppState,
@@ -12,8 +12,8 @@ import {
 } from '../common/completeAppStatus'
 import { getJobCount } from '../common/dataCounts'
 import { createTheme, ThemeProvider } from '@mui/material/styles'
-import { WaveInlineToolbar } from './toolbar'
-import { WaveBottomText } from './bottomText'
+import { WaveInlineToolbar } from './WaveInlineToolbar'
+import { WaveBottomText } from './WaveBottomText'
 
 const darkTheme = createTheme({
     palette: {

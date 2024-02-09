@@ -5,16 +5,16 @@ import { trySendMessageToActiveTab } from '../browser/tabs'
 import { UserSyncStorageKeys } from '../shared/userProfile'
 import { LogoLoader } from '../common/LogoLoader'
 import { JobBoard } from '../shared/jobBoard'
-import { LogoBar } from './logoBar'
+import { LogoBar } from './LogoBar'
 import {
     isScrapeActive,
     isScrapeFinished,
     ScraperStatus,
     ScrapeStage,
 } from '../common/scraperStatus'
-import { StatusHeader } from './statusHeader'
-import { MainDisplay } from './mainDisplay'
-import { AdvancedOptions } from './advancedOptions'
+import { StatusHeader } from './StatusHeader'
+import { MainDisplay } from './MainDisplay'
+import { AdvancedOptions } from './AdvancedOptions'
 import { getBrowserInfo } from '../browser/runtime'
 import { setSyncStorageByKey } from '../browser/storage'
 import { ThemeProvider, createTheme } from '@mui/material/styles'

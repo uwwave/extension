@@ -33,9 +33,9 @@
         {
             "matches": ["*://waterlooworks.uwaterloo.ca/*"],
             "js": [
+                "main/toolbar/main.tsx",
                 "main/waterlooworks/jobNav.ts",
                 "main/waterlooworks/scraper.ts",
-                "main/waterlooworks/main.tsx",
                 "main/waterlooworks/popupService.ts"
             ],
             "css": [
