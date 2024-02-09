@@ -16,12 +16,6 @@ export enum LocalStorageMetadataKeys {
     VIEWED_JOBS = 'VIEWED_JOBS',
 }
 
-export enum TargetSearchAction {
-    FOR_MY_PROGRAM = 'FOR_MY_PROGRAM',
-    DEFAULT_SEARCH = 'DEFAULT_SEARCH',
-    VIEWED = 'VIEWED',
-}
-
 export enum BadgeIconName {
     error = 'error',
     warning = 'warning',

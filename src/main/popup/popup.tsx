@@ -2,11 +2,7 @@ import { createRoot } from 'react-dom/client'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { updateBadge } from '../common/icon'
 import { trySendMessageToActiveTab } from '../browser/tabs'
-import {
-    AppStatusOverview,
-    TargetSearchAction,
-    UserSyncStorageKeys,
-} from '../shared/userProfile'
+import { AppStatusOverview, UserSyncStorageKeys } from '../shared/userProfile'
 import { getAppStatus } from '../common/appStatus'
 import { LogoLoader } from '../common/LogoLoader'
 import { JobBoard } from '../shared/jobBoard'
@@ -29,6 +25,7 @@ import {
     getJobBoardSetting,
     getTargetSearchActionSetting,
 } from '../common/userPrefs'
+import { TargetSearchAction } from '../common/targetSearchAction'
 
 const darkTheme = createTheme({
     palette: {

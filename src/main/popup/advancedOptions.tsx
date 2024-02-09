@@ -12,9 +12,9 @@ import MenuItem from '@mui/material/MenuItem'
 import FormHelperText from '@mui/material/FormHelperText'
 import FormControl from '@mui/material/FormControl'
 import Select, { SelectChangeEvent } from '@mui/material/Select'
-import { TargetSearchAction } from '../shared/userProfile'
 import { JobBoard } from '../shared/jobBoard'
 import { WaveColors } from '../common/waveColors'
+import { TargetSearchAction } from '../common/targetSearchAction'
 
 interface IAdvancedOptionsProps {
     isFirefox: boolean

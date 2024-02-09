@@ -26,7 +26,6 @@ import { JOB_BOARD_SPEC, JobBoard } from '../shared/jobBoard'
 import {
     LocalStorageMetadataKeys,
     ScrapeStatus,
-    TargetSearchAction,
     UserSyncStorageKeys,
 } from '../shared/userProfile'
 import moment from 'moment'
@@ -35,6 +34,7 @@ import {
     getJobBoardSetting,
     getTargetSearchActionSetting,
 } from '../common/userPrefs'
+import { TargetSearchAction } from '../common/targetSearchAction'
 
 const DASHBOARD_URL =
     'https://waterlooworks.uwaterloo.ca/myAccount/dashboard.htm'

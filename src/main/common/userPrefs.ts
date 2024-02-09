@@ -1,6 +1,7 @@
 import { getSyncStorage } from '../browser/storage'
-import { TargetSearchAction, UserSyncStorageKeys } from '../shared/userProfile'
+import { UserSyncStorageKeys } from '../shared/userProfile'
 import { JobBoard } from '../shared/jobBoard'
+import { TargetSearchAction } from './targetSearchAction'
 
 export const getJobBoardSetting = async () => {
     return (
