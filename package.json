@@ -1,6 +1,6 @@
 {
     "name": "uwwave_extension_lib",
-    "version": "1.2.3",
+    "version": "1.2.4",
     "description": "API for reading and writing from the UW Wave browser extension",
     "repository": {
         "type": "git",
