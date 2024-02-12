@@ -13,13 +13,12 @@
         "README.md",
         "LICENSE.txt"
     ],
-    "exports": {
-        "./company": "./dist_lib/company.js",
-        "./consts": "./dist_lib/consts.js",
-        "./dataBridge": "./dist_lib/dataBridge.js",
-        "./job": "./dist_lib/job.js",
-        "./jobBoard": "./dist_lib/jobBoard.js",
-        "./jobKeys": "./dist_lib/jobKeys.js"
+    "main": "./dist_lib/index.js",
+    "exports": "./dist_lib/index.js",
+    "types": "./dist_lib/index.d.ts",
+    "targets": {
+        "main": false,
+        "types": false
     },
     "homepage": "https://uwwave.ca",
     "scripts": {
