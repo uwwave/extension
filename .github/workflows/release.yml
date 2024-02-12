@@ -1,0 +1,42 @@
+name: release
+
+# https://help.github.com/en/articles/workflow-syntax-for-github-actions#on
+on:
+  push:
+    tags:
+      - "*"
+
+jobs:
+  draft_release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      # Setup .npmrc file
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18.x'
+          registry-url: 'https://registry.npmjs.org'
+      - run: yarn
+      - run: yarn build
+      - uses: montudor/action-zip@v1
+        with:
+          args: zip -qq -r uwwave_${{ github.ref }}_chrome.zip dist
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+          draft: true
+          prerelease: false
+      - uses: xresloader/upload-to-github-release@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          file: "*.md;*.zip;"
+          release_id: ${{ steps.create_release.outputs.id }}
+          overwrite: false
+          tags: true
+          verbose: true
