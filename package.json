@@ -19,7 +19,7 @@
         "start": "yarn clean && parcel watch src/manifest.json --host localhost",
         "build": "yarn clean && yarn build:chrome && yarn build:firefox && yarn build:lib",
         "build:chrome": "parcel build src/manifest.json",
-        "build:firefox": "mkdir dist_firefox && cp -r dist/* dist_firefox && node exportToFirefox.mjs",
+        "build:firefox": "mkdir -p dist_firefox && cp -r dist/* dist_firefox && node exportToFirefox.mjs",
         "build:lib": "yarn tsc --build tsconfig.lib.json",
         "test": "jest --passWithNoTests",
         "test:coverage": "jest --coverage --watchAll=false --passWithNoTests",

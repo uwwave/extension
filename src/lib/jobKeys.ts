@@ -1,9 +1,5 @@
-import {
-    JobPosting,
-    PostingListDataCoop,
-    PostingListDataFulltime,
-} from './job.ts'
-import { JobBoard } from './jobBoard.ts'
+import { JobPosting, PostingListDataCoop, PostingListDataFulltime } from './job'
+import { JobBoard } from './jobBoard'
 
 /* jobKeys.ts
  *
