@@ -1,0 +1,247 @@
+{
+    "SCRAPE_AT": "2024-01-01T01:00:00.000Z",
+    "coopJob_1001": {
+        "divisionId": 2001,
+        "isForMyProgram": true,
+        "jobBoard": 0,
+        "jobId": 1001,
+        "pageData": {
+            "Application Information": {
+                "Additional Application Information": "<strong>Please include your portfolio to be considered for this position.</strong>",
+                "Application Deadline": "September\n                      19, 2023\n                      09:00 AM",
+                "Application Documents Required": "University of Waterloo Co-op Work History,Résumé,Grade Report,Other - Per Job Posting",
+                "Application Method": "WaterlooWorks"
+            },
+            "Company Information": {
+                "Division": "Divisional Office",
+                "Organization": "Test Corporation"
+            },
+            "Job Posting Information": {
+                "Additional Information Re": "Position can be either hybrid or remote as there is no need to relocate.",
+                "Compensation and Benefits Information": "$24 - $36/hr",
+                "Employment Location Arrangement": "Hybrid",
+                "Job - Address Line One": "123 Test Drive",
+                "Job - City": "Toronto",
+                "Job - Country": "Canada",
+                "Job - Postal Code / Zip Code (X#X #X#)": "1K1 2L2",
+                "Job - Province / State": "Ontario",
+                "Job Category (NOC)": "2173 Software Engineers and Designers",
+                "Job Responsibilities": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus laoreet maximus. Aenean volutpat elementum accumsan. Ut fringilla magna eget risus faucibus pellentesque. Sed sagittis ex nec malesuada molestie. Nam eget purus suscipit, congue diam aliquet, luctus libero. Praesent bibendum dui libero, a sagittis massa vulputate ac. Ut id egestas ipsum. Morbi facilisis, tellus sed vehicula maximus, arcu purus tincidunt ipsum, nec finibus est odio nec arcu. Aliquam dapibus bibendum tellus, sed vulputate leo lobortis id. Duis suscipit ut risus sit amet pulvinar. Phasellus pulvinar, tellus ac rhoncus commodo, arcu erat tristique elit, id condimentum nunc libero id justo. Nam nulla lorem, facilisis vel lectus eget, suscipit gravida metus.",
+                "Job Summary": "Ut aliquam pulvinar ligula, in efficitur ipsum. Phasellus at dui condimentum, porta odio eu, congue ante. Sed et mauris ac arcu eleifend egestas. Sed pretium gravida odio, id mattis mi. Quisque rhoncus sagittis neque, at porta quam dapibus nec. Duis ultricies at nibh ut pretium. Sed id suscipit turpis. Aenean bibendum erat vitae urna scelerisque aliquet. Etiam tincidunt dolor nec massa fermentum sagittis. Duis porta eget neque non consequat. Duis lacinia vel odio sit amet tincidunt. Vivamus euismod convallis nulla in vulputate. Suspendisse urna est, aliquam sed ex nec, gravida tincidunt libero. Curabitur maximus et odio nec pulvinar. Duis ut tristique arcu.",
+                "Job Title": "Software Developer",
+                "Job Type": "Co-op Main",
+                "Level": "<table>\n\t\n\t\n\t\t\n\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t<tbody><tr>\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<td class=\"np-view-question--15\">Junior</td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<td class=\"np-view-question--15\">Intermediate</td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<td class=\"np-view-question--15\">Senior</td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\n\t\t\t\n\t\t\t\n\t\t\t\t\n\t\t\t\n\t\t\n\t\n\t\n</tbody></table>",
+                "Number of Job Openings": "2",
+                "Region": "ON - Toronto",
+                "Required Skills": "Nunc volutpat, sapien ut varius vehicula, arcu ligula mollis velit, a consectetur nulla ex et augue. Cras molestie, nulla eget condimentum condimentum, turpis justo tincidunt tellus, et porta erat odio vitae mi. Duis accumsan ligula lacus, quis efficitur ante commodo vitae. Integer luctus vitae ipsum eu gravida. Praesent blandit in sem ac dictum. Curabitur accumsan erat id diam mattis, vitae ultrices odio congue. Nunc vitae sem non massa commodo finibus bibendum vitae nisl. Vivamus mauris est, fermentum in ultricies quis, dapibus vel tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget ex nec augue sodales interdum.",
+                "Targeted Degrees and Disciplines": "<div id=\\\"clustersProgramsDiv\\\">\\n\\t\\n\\t\\n\\t\\t<div>\\n\\t\\t\\t<strong> Targeted Clusters\\n\\t\\t\\t</strong>\\n\\t\\t</div>\\n\\t\\t\\n\\t\\t\\n\\t\\t\\t\\n\\t\\t\\t\\t- Theme - Computing: Software\\n\\t\\t\\t\\t<br>\\n\\t\\t\\t\\n\\t\\t\\t\\tMATH - Computer Science\\n\\t\\t\\t\\t<br>\\n\\t\\t\\t\\n\\t\\t\\n\\t\\n\\t\\n</div>",
+                "Work Term": "2024 - Winter",
+                "Work Term Duration": "4 month work term"
+            }
+        },
+        "postingListData": {
+            "applications": 13,
+            "company": "Test Corporation",
+            "deadline": "Sep 19, 2023",
+            "division": "Divisional Office",
+            "internalStatus": "Open for Applications",
+            "jobTitle": "Software Developer",
+            "level": "Junior, Intermediate, Senior",
+            "location": "Kanata",
+            "openings": 2
+        }
+    },
+    "division_2001": {
+        "division": "Divisional Office",
+        "graphs": [
+            {
+                "series": [
+                    {
+                        "colorByPoint": true,
+                        "data": [
+                            {
+                                "name": "Engineering",
+                                "y": 26
+                            },
+                            {
+                                "name": "Mathematics",
+                                "y": 74
+                            }
+                        ],
+                        "name": "Percentage"
+                    }
+                ],
+                "title": "Hires by Faculty"
+            },
+            {
+                "series": [
+                    {
+                        "colorByPoint": true,
+                        "data": [
+                            {
+                                "name": "First",
+                                "y": 16
+                            },
+                            {
+                                "name": "Second",
+                                "y": 37
+                            },
+                            {
+                                "name": "Third",
+                                "y": 26
+                            },
+                            {
+                                "name": "Fourth",
+                                "y": 21
+                            }
+                        ],
+                        "name": "Percentage"
+                    }
+                ],
+                "title": "Hires by Student Work Term Number"
+            },
+            {
+                "categories": [
+                    "Computer Science/BCS",
+                    "Computer Engineering",
+                    "Honours Mathematics",
+                    "Mathematical Studies",
+                    "Nanotechnology Engineering"
+                ],
+                "series": [
+                    {
+                        "data": [
+                            12,
+                            4,
+                            1,
+                            1,
+                            1
+                        ],
+                        "name": "Hires"
+                    }
+                ],
+                "title": "Most Frequently Hired Programs"
+            },
+            {
+                "categories": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5",
+                    "6",
+                    "7",
+                    "8",
+                    "9",
+                    "10"
+                ],
+                "series": [
+                    {
+                        "data": [
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            12,
+                            0,
+                            29,
+                            47,
+                            12
+                        ],
+                        "name": "Test Corporation"
+                    }
+                ],
+                "title": "Overall Work Term Satisfaction - Distribution of Student Ratings (1-10 scale) Fall 2020 to Spring 2023"
+            },
+            {
+                "categories": [
+                    "Q1. Availability of employer support (e.g. start of the term in the company, ongoing interactions with supervisors/others, general feedback, and end-of-term transition)",
+                    "Q2. Opportunities to learn or develop new skills",
+                    "Q3. Opportunities to make meaningful contributions at work",
+                    "Q4. Opportunities to expand your professional network",
+                    "Q5. Appropriate compensation and/or benefits",
+                    "Q6. How closely your work was related to your academic program",
+                    "Q7. How closely your work was related to the skills you are developing at university"
+                ],
+                "series": [
+                    {
+                        "data": [
+                            4.6,
+                            4.5,
+                            4.2,
+                            3.7,
+                            4.4,
+                            4.2,
+                            3.9
+                        ],
+                        "name": "Bentley Systems Inc",
+                        "type": "column"
+                    },
+                    {
+                        "data": [
+                            4.5,
+                            4.3,
+                            4.3,
+                            4.1,
+                            4.2,
+                            3.9,
+                            3.9
+                        ],
+                        "name": "Average of All Co-op Students",
+                        "type": "spline"
+                    }
+                ],
+                "title": "Average Rating by Question (1-5 scale) Fall 2020 to Spring 2023"
+            }
+        ],
+        "hireHistory": [
+            {
+                "divisionHired": "1",
+                "organizationHired": "1",
+                "term": "2020 - Fall"
+            },
+            {
+                "divisionHired": "2",
+                "organizationHired": "2",
+                "term": "2021 - Winter"
+            },
+            {
+                "divisionHired": "2",
+                "organizationHired": "2",
+                "term": "2021 - Spring"
+            },
+            {
+                "divisionHired": "2",
+                "organizationHired": "2",
+                "term": "2021 - Fall"
+            },
+            {
+                "divisionHired": "0",
+                "organizationHired": "0",
+                "term": "2022 - Winter"
+            },
+            {
+                "divisionHired": "5",
+                "organizationHired": "5",
+                "term": "2022 - Spring"
+            },
+            {
+                "divisionHired": "0",
+                "organizationHired": "0",
+                "term": "2022 - Fall"
+            },
+            {
+                "divisionHired": "3",
+                "organizationHired": "3",
+                "term": "2023 - Winter"
+            },
+            {
+                "divisionHired": "4",
+                "organizationHired": "4",
+                "term": "2023 - Spring"
+            }
+        ],
+        "organization": "Test Corporation"
+    }
+}
