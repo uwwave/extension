@@ -1,4 +1,4 @@
-name: release
+name: Create release with build
 
 # https://help.github.com/en/articles/workflow-syntax-for-github-actions#on
 on:
@@ -8,6 +8,8 @@ on:
 
 jobs:
   draft_release:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
