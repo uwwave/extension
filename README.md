@@ -24,3 +24,6 @@ The extension library is used by the website to load in data.
 ## Development
 
 For test data, see `test_data` folder. Upload this to the extension using the advanced options menu.
+
+For release managers, when updating the version, make sure to update both `manifest.json` and `package.json`.  
+Create a new tag to trigger a draft release, then publish the release to publish to npm.  

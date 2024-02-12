@@ -20,7 +20,7 @@ jobs:
       - run: yarn build
       - uses: montudor/action-zip@v1
         with:
-          args: zip -qq -r uwwave_${{ github.ref }}_chrome.zip dist
+          args: zip -qq -r uwwave_chrome.zip dist
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
