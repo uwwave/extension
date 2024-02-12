@@ -23,6 +23,9 @@ jobs:
       - uses: montudor/action-zip@v1
         with:
           args: zip -qq -r uwwave_chrome.zip dist
+      - uses: montudor/action-zip@v1
+        with:
+          args: zip -qq -r uwwave_lib.zip dist_lib
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
@@ -31,7 +34,7 @@ jobs:
         with:
           tag_name: ${{ github.ref }}
           release_name: Release ${{ github.ref }}
-          draft: true
+          draft: false
           prerelease: false
       - uses: xresloader/upload-to-github-release@main
         env:
@@ -42,3 +45,6 @@ jobs:
           overwrite: false
           tags: true
           verbose: true
+      - run: yarn publish:lib
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
