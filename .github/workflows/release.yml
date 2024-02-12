@@ -13,10 +13,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Exit if not on main branch
-        # head_ref for PR, ref_name for anything else
-        if: endsWith(github.ref_name, 'main') == false
-        run: exit -1
       # Setup .npmrc file
       - uses: actions/setup-node@v3
         with:
