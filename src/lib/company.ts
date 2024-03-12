@@ -13,7 +13,7 @@ export interface HireHistory {
 // Pie graphs only have series, bar graphs will have series and categories
 export interface HireGraph {
     title: string
-    series: Record<string, any>
+    series: Record<string, any>[]
     categories?: Record<string, any>
 }
 
