@@ -1,5 +1,17 @@
 {
     "SCRAPE_AT": "2024-03-14T01:00:00.000Z",
+    "VIEWED_JOBS": {},
+    "all_tags": {
+        "Ambitious": {
+            "color": "#EC3A3A"
+        },
+        "Possible": {
+            "color": "#EC9D05"
+        },
+        "Safe": {
+            "color": "#5BA937"
+        }
+    },
     "coopJob_1001": {
         "divisionId": 2001,
         "isForMyProgram": true,
@@ -514,5 +526,28 @@
             }
         ],
         "organization": "Tesla Motors"
-    }
+    },
+    "jobs_to_processing_results": {
+        "1001": {
+            "keywords": [
+                "scale",
+                "networking",
+                "security",
+                "leadership",
+                "retrieval"
+            ],
+            "processedAt": "2024-03-15T00:57:42.671Z"
+        },
+        "1002": {
+            "keywords": [
+                "autopilot",
+                "robot",
+                "fabrication",
+                "speed",
+                "wiring"
+            ],
+            "processedAt": "2024-03-15T00:57:42.671Z"
+        }
+    },
+    "jobs_to_tags": {}
 }
