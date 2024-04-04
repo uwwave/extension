@@ -11,7 +11,7 @@ interface JobBoardSpec {
 
 export const JOB_BOARD_SPEC: { [jobBoard in JobBoard]: JobBoardSpec } = {
     [JobBoard.coop]: {
-        name: 'Co-op - Full-cycle Service',
+        name: 'Co-op Cycle',
         url: 'https://waterlooworks.uwaterloo.ca/myAccount/co-op/full/jobs.htm',
     },
     [JobBoard.fulltime]: {
